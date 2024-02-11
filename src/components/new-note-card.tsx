@@ -113,11 +113,11 @@ export function NewNoteCard ({onNoteCreated}: NewNoteCardProps){
                                 Adicionar nota
                             </span>
                             {shouldShowOnboarding ? (
-                                <p className='text-sm leading-6 text-slate-400'>
-                                Comece 
-                                <button type='button' onClick={handleStartRecording} className='font-medium text-lime-400 hover:underline'>gravando uma nota</button>
+                                <p className='text-sm leading-6 text-slate-400'> 
+                                Comece
+                                <button type='button' onClick={handleStartRecording} className='font-medium text-lime-400 m-1 hover:underline'> gravando uma nota </button>
                                 em áudio ou se preferir
-                                <button type='button' onClick={handleStartEditor} className='font-medium text-lime-400 hover:underline'>utilize apenas texto</button>.
+                                <button type='button' onClick={handleStartEditor} className='font-medium text-lime-400 m-1 hover:underline'> utilize apenas texto </button>.
                             </p>) : (
                                 <textarea
                                 autoFocus className='text-sm leading-6 bg-transparent text-slate-400 resize-none flex-1 outline-none' onChange={handleContentChanged} value={content}/>
